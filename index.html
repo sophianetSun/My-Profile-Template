@@ -3,49 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Profile</title>
+    <style>
+        /* --- STYLE SECTION --- */
+
+        /* This sets the background for the whole page */
+        body {
+            /* Try changing the colors here! */
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* This is the white card in the middle */
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 400px; /* Keeps the card from getting too big */
+        }
+
+        /* This styles the circular image */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes it a circle */
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* This styles the Name */
+        h1 {
+            color: #333;
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        /* This styles the Intro Text */
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* This contains the list of buttons */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* This styles the buttons */
+        .button {
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        /* This happens when you hover over a button */
+        .button:hover {
+            transform: scale(1.05); /* Makes it pop out */
+            background-color: #764ba2;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header class="profile-header">
-            <div class="profile-image">
-                <img src="https://via.placeholder.com/150" alt="Photo of Your Name">
-            </div>
-            <h1 class="name">Your Name</h1>
-            <p class="tagline">Web Developer | Designer | Creator</p>
-        </header>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Welcome to my profile! I'm a passionate developer who loves creating beautiful and functional web experiences. I enjoy learning new technologies and solving complex problems.</p>
-        </section>
+    <!-- CARD START -->
+    <div class="card">
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Python</span>
-            </div>
-        </section>
+        <!-- CHANGE THIS: Replace the src with your image URL -->
+        <!-- You can use a file path or a link from the internet -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <div class="social-links">
-                <a href="#" class="social-link" aria-label="Visit my GitHub profile">GitHub</a>
-                <a href="#" class="social-link" aria-label="Visit my LinkedIn profile">LinkedIn</a>
-                <a href="#" class="social-link" aria-label="Visit my Twitter profile">Twitter</a>
-                <a href="mailto:your@email.com" class="social-link" aria-label="Send me an email">Email</a>
-            </div>
-        </section>
+        <!-- CHANGE THIS: Put your Name here -->
+        <h1>Alex Smith</h1>
 
-        <footer>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </footer>
+        <!-- CHANGE THIS: Write a short intro about yourself -->
+        <p>Gamer 🎮 | Coder 💻 | Cat Lover 🐱</p>
+
+        <!-- LINKS SECTION -->
+        <div class="links">
+            <!-- CHANGE THESE: Update the href (link) and the text -->
+
+            <a href="https://roblox.com/users/YOUR_ID/profile" class="button" target="_blank">My Roblox Profile</a>
+
+            <a href="https://youtube.com/YOUR_CHANNEL" class="button" target="_blank">Favorite YouTube</a>
+
+            <a href="https://scratch.mit.edu/users/YOUR_USER" class="button" target="_blank">My Scratch Projects</a>
+
+        </div>
     </div>
+    <!-- CARD END -->
+
 </body>
 </html>
